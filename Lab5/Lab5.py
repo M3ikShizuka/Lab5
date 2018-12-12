@@ -45,6 +45,7 @@ def main():
         # Обработка данных участника.
         surname, name, points[0], points[1], points[2] = full_name.split(" ")
         points = list(map(int, points))
+
         if max(points) > 25:
             print("Ошибка в количестве баллов!")
             print("Повторите попытку ввода.")
